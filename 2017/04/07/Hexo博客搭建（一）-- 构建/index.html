@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Intellij,IdeaVim," />
+  <meta name="keywords" content="Hexo," />
 
 
 
@@ -93,17 +93,17 @@
 
 
 
-<meta name="description" content="开启相对行号显示切换到命令模式（Esc + :）  set nu set relativenumber">
-<meta name="keywords" content="Intellij,IdeaVim">
+<meta name="description" content="Hexo依赖于Node JS和Git，需要事先安装。 安装node js使用yum来安装Node JS，参照官网说明进行。  curl –silent –location https://rpm.nodesource.com/setup_6.x | bash -yum -y install nodejs  安装git yum -y install git">
+<meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Intellij折腾记 -- IdeaVim">
-<meta property="og:url" content="http://yoursite.com/2017/05/09/Intellij折腾记 -- IdeaVim/index.html">
+<meta property="og:title" content="Hexo博客搭建(一)--构建">
+<meta property="og:url" content="http://yoursite.com/2017/04/07/Hexo博客搭建（一）-- 构建/index.html">
 <meta property="og:site_name" content="A Hello World!">
-<meta property="og:description" content="开启相对行号显示切换到命令模式（Esc + :）  set nu set relativenumber">
-<meta property="og:updated_time" content="2017-07-04T02:58:24.000Z">
+<meta property="og:description" content="Hexo依赖于Node JS和Git，需要事先安装。 安装node js使用yum来安装Node JS，参照官网说明进行。  curl –silent –location https://rpm.nodesource.com/setup_6.x | bash -yum -y install nodejs  安装git yum -y install git">
+<meta property="og:updated_time" content="2017-07-04T07:36:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Intellij折腾记 -- IdeaVim">
-<meta name="twitter:description" content="开启相对行号显示切换到命令模式（Esc + :）  set nu set relativenumber">
+<meta name="twitter:title" content="Hexo博客搭建(一)--构建">
+<meta name="twitter:description" content="Hexo依赖于Node JS和Git，需要事先安装。 安装node js使用yum来安装Node JS，参照官网说明进行。  curl –silent –location https://rpm.nodesource.com/setup_6.x | bash -yum -y install nodejs  安装git yum -y install git">
 
 
 
@@ -131,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/05/09/Intellij折腾记 -- IdeaVim/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/04/07/Hexo博客搭建（一）-- 构建/"/>
 
 
 
 
 
-  <title>Intellij折腾记 -- IdeaVim | A Hello World!</title>
+  <title>Hexo博客搭建(一)--构建 | A Hello World!</title>
   
 
 
@@ -266,7 +266,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/09/Intellij折腾记 -- IdeaVim/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/07/Hexo博客搭建（一）-- 构建/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Gollfe">
@@ -283,7 +283,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Intellij折腾记 -- IdeaVim</h1>
+          <h1 class="post-title" itemprop="name headline">Hexo博客搭建(一)--构建</h1>
         
 
         <div class="post-meta">
@@ -295,8 +295,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-09T23:22:29+08:00">
-                2017-05-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-07T19:20:29+08:00">
+                2017-04-07
               </time>
             
 
@@ -330,10 +330,91 @@
       
 
       
-        <h1 id="开启相对行号显示"><a href="#开启相对行号显示" class="headerlink" title="开启相对行号显示"></a>开启相对行号显示</h1><p>切换到命令模式（Esc + :）</p>
+        <p>Hexo依赖于Node JS和Git，需要事先安装。</p>
+<h1 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node js"></a>安装node js</h1><p>使用<code>yum</code>来安装<code>Node JS</code>，参照<a href="https://nodejs.org/en/download/package-manager/" target="_blank" rel="external">官网</a>说明进行。</p>
 <blockquote>
-<p>set nu</p>
-<p>set relativenumber</p>
+<p>curl –silent –location <a href="https://rpm.nodesource.com/setup_6.x" target="_blank" rel="external">https://rpm.nodesource.com/setup_6.x</a> | bash -<br>yum -y install nodejs</p>
+</blockquote>
+<h1 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h1><blockquote>
+<p>yum -y install git</p>
+</blockquote>
+<a id="more"></a>
+<h1 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h1><blockquote>
+<p>npm install -g hexo-cli</p>
+</blockquote>
+<p>创建目录文件夹</p>
+<blockquote>
+<p>hexo init <folder><br>cd <folder><br>npm install</folder></folder></p>
+</blockquote>
+<p>此时运行服务器即可</p>
+<blockquote>
+<p>hexo server</p>
+</blockquote>
+<p>默认端口为4000，需要将其添加到防火墙中，以便其它地址的机器访问。</p>
+<h1 id="与Github关联"><a href="#与Github关联" class="headerlink" title="与Github关联"></a>与Github关联</h1><p>在Github上创建新的repository，例如名称为<em>*</em>.github.io<br>打开工程目录下的_config.yml文件，修改如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/***/***.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<p>第一个<code>***</code>代表github用户名，第二个为之前创建的repository。<br>运行：</p>
+<blockquote>
+<p>npm install hexo-deplyer-git -save<br>hexo g    (生成本地静态文件)<br>hexo d    （将本地静态文件推送到Github）</p>
+</blockquote>
+<p>部署之后，就可以通过<a href="http://`***`.github.io" target="_blank" rel="external">http://`***`.github.io</a> 来访问</p>
+<h1 id="文件和目录"><a href="#文件和目录" class="headerlink" title="文件和目录"></a>文件和目录</h1><ul>
+<li><p>站点配置文件</p>
+<p>Hexo根目录的<code>_config.yum</code>被习惯称为站点配置文件，负责对整个站点的信息进行配置（包括作者、等）<br>站点配置文件中的<code>language</code>实现对语言的设置，如果是简体中文，将其配置为：</p>
+<p><code>language: zh-Hans</code></p>
+</li>
+<li><p>主题配置文件</p>
+<p>此外，在themes下的每个主题目录都有一个对应的<code>_config.yml</code>文件，习惯称为主题配置文件，是对该主题的属性进行配置。</p>
+</li>
+<li><p>scaffolds</p>
+<p>模板文件夹，新建文章时，hexo会根据scaffold来建立文件。</p>
+</li>
+<li><p>source</p>
+<p>资源文件及，用来存储用户资源。除了<code>_posts</code>外，以<code>_</code>开头命名的文件和文件夹、以及隐藏文件都会被忽略。Markdown和Html文件会被解析并放到<code>public</code>文件夹，其它文件则会被直接拷贝过去。</p>
+</li>
+<li><p>themes</p>
+<p>主题文件及，hexo会根据主题生成静态页面</p>
+</li>
+</ul>
+<h1 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h1><ol>
+<li>新建文章<blockquote>
+<p>hexo new [layout] <title><br>如果没有设置<code>layout</code>的话，默认使用站点配置文件中<code>default-layout</code>参数代替。<br><strong>如果标题包含空格，需要使用引号括起来</strong></title></p>
+</blockquote>
+</li>
+<li><p>生成静态文件</p>
+<blockquote>
+<p>hexo generate</p>
+</blockquote>
+<p>简写为<code>hexo g</code>。</p>
+</li>
+<li><p>部署网站</p>
+<blockquote>
+<p>hexo deploy</p>
+</blockquote>
+</li>
+</ol>
+<p>简写为<code>hexo d</code></p>
+<ol>
+<li>清除缓存<blockquote>
+<p>hexo clean</p>
+</blockquote>
+</li>
+</ol>
+<p>会清除缓存文件(<code>db.json</code>)和已生成的静态文件(<code>public</code>目录下文件)。在如更换主题等情况下，如果发现更改不能生效，可以清除缓存试试。</p>
+<ol>
+<li>其它<blockquote>
+<p>hexo list</p>
+</blockquote>
+</li>
+</ol>
+<p>列出网站资料</p>
+<blockquote>
+<p>hexo version</p>
+</blockquote>
+<p>显示版本号</p>
+<h1 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">fatal: Not a git repository (or any parent up to mount point /home)</div></pre></td></tr></table></figure>
+<p>解决办法：</p>
+<blockquote>
+<p>删除根目录下<code>.deploy_git</code>，然后重新deploy</p>
 </blockquote>
 
       
@@ -364,9 +445,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Intellij/" rel="tag"># Intellij</a>
-          
-            <a href="/tags/IdeaVim/" rel="tag"># IdeaVim</a>
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
           
         </div>
       
@@ -379,8 +458,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/05/09/Pipeline对Redis批量读写/" rel="next" title="Pipeline对Redis批量读写">
-                <i class="fa fa-chevron-left"></i> Pipeline对Redis批量读写
+              <a href="/2017/03/04/Vim常见操作/" rel="next" title="Vim常见操作">
+                <i class="fa fa-chevron-left"></i> Vim常见操作
               </a>
             
           </div>
@@ -389,8 +468,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/05/23/Ubuntu更换源/" rel="prev" title="使用`sed`更换Ubuntu的源">
-                使用`sed`更换Ubuntu的源 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/04/08/Hexo博客搭建（二）--Next主题设置/" rel="prev" title="Hexo博客搭建（二） -- Next主题设置">
+                Hexo博客搭建（二） -- Next主题设置 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -511,7 +590,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#开启相对行号显示"><span class="nav-number">1.</span> <span class="nav-text">开启相对行号显示</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装node-js"><span class="nav-number">1.</span> <span class="nav-text">安装node js</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装git"><span class="nav-number">2.</span> <span class="nav-text">安装git</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装hexo"><span class="nav-number">3.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#与Github关联"><span class="nav-number">4.</span> <span class="nav-text">与Github关联</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文件和目录"><span class="nav-number">5.</span> <span class="nav-text">文件和目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基本操作"><span class="nav-number">6.</span> <span class="nav-text">基本操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常见问题"><span class="nav-number">7.</span> <span class="nav-text">常见问题</span></a></li></ol></div>
             
 
           </div>
